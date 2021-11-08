@@ -59,7 +59,8 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     
     디테일하게는 엑세스 클래스, 연산자, 액세스 타입으로 구분된다.
     
-    ![스크린샷 2021-11-08 오전 10.29.04.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b899d02c-0caa-44b6-b83c-903eab4e96d7/스크린샷_2021-11-08_오전_10.29.04.png)
+   ![스크린샷 2021-11-08 오전 10 29 04](https://user-images.githubusercontent.com/87476435/140712511-225e4d9e-988c-41cf-a362-fb547afe288f.png)
+
     
     위의 helloworld.js의 권한을 symbolic method로 변경한다면 다음과 같다
     
@@ -73,7 +74,8 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     chmod u+rwx helloworld.js # u(사용자의 권한에) rwx를 추가함, -rwx------
     ```
     
-    ![chmod 명령어를 사용해 권한을 바꾼 파일](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/590339a4-45a5-4cad-8964-f968cb0c2ae9/스크린샷_2021-11-08_오전_10.48.35.png)
+    ![스크린샷 2021-11-08 오전 10 48 35](https://user-images.githubusercontent.com/87476435/140712582-40bf85b2-1737-480b-80c0-0f1a482dad8d.png)
+
     
     chmod 명령어를 사용해 권한을 바꾼 파일
     
