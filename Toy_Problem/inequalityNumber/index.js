@@ -1,1 +1,8 @@
-//TODO
+```jsx
+const inequalityNumber = function (signs) {
+
+
+
+
+}
+```
