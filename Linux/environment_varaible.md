@@ -11,9 +11,9 @@
 ## 1. d,- / rwf / user, group, other
 
 터미널 상에 다음과 같이 파일과 폴더를 만들어 보자
-```cli
-mkdir linux
-nano helloworld.js
+```bash
+$ mkdir linux
+$ nano helloworld.js
 ```
 
 이후 터미널에 `ls -l` 명령어를 입력하면 다음과 같은 화면이 나온다
