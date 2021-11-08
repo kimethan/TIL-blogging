@@ -25,7 +25,8 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
 
 여기서 사용자명 앞의 문자열을 주목하면, 각 문자열은 다음과 같은 의미를 가지고 있다.
 
-![[그림] 폴더나 파일의 권한 정보](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bf158532-b16c-44ce-9c5b-0b9250f2d57b/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/87476435/140712212-72aaa30f-d382-4b74-8c46-70b23f925adf.png)
+
 
 [그림] 폴더나 파일의 권한 정보
 
