@@ -12,7 +12,7 @@
 
 터미널 상에 다음과 같이 파일과 폴더를 만들어 보자
 
-https://www.notion.so/cc092daf49d44650a3fdf2dffad398c1#5c993bd8aeb947138231500054f6e7ad
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/020bb4e6-3757-48c0-b4aa-a46d1ab1d2bd/Untitled.gif)
 
 이후 터미널에 `ls -l` 명령어를 입력하면 다음과 같은 화면이 나온다
 
