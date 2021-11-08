@@ -14,3 +14,11 @@
 - [환경변수](Linux/environment_varaible.md)
 
 ***
+
+## 자료구조/Algorithm
+
+-[Time Complexity]()
+-[Greedy Algorithm]()
+-[Algorithm with Math]()
+
+---
