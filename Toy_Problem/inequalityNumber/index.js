@@ -1,8 +1,6 @@
-
 const inequalityNumber = function (signs) {
 
 
 
 
 }
-
