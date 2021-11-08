@@ -75,8 +75,6 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     ![스크린샷 2021-11-08 오전 10 48 35](https://user-images.githubusercontent.com/87476435/140712582-40bf85b2-1737-480b-80c0-0f1a482dad8d.png)
 
     
-    chmod 명령어를 사용해 권한을 바꾼 파일
-    
     symbolic method를 사용하기 위해선 액세스 클래스 연산자와 엑세스 타입을 모두 기억해야 한다
     
 - **Absolute form**
@@ -85,7 +83,8 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     
     사용자, 그룹 또는 다른 사용자나 그룹마다 `rwx`가 나타나고 각 영역의 boolean 값으로 표기한다.
     
-    ![스크린샷 2021-11-08 오전 10.51.50.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/145dbb08-e7ae-477c-bdb9-a3f2483af147/스크린샷_2021-11-08_오전_10.51.50.png)
+    ![스크린샷 2021-11-08 오전 10 51 50](https://user-images.githubusercontent.com/87476435/140712800-543254dd-db31-4e3d-94ab-b13cacecc68a.png)
+
     
     ```bash
     #user를 rwx, group과 other를 r--로 변경하고자 한다면, 위 표의 숫자의 합을 user, group, other 순으로 입력하여 사용한다
@@ -93,8 +92,10 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     chmod 744 helloworld.js # -rwxr--r--
     ```
     
-    ![스크린샷 2021-11-08 오전 10.55.01.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b059d18a-9a70-4b1c-bdc3-e5c7654b9c11/스크린샷_2021-11-08_오전_10.55.01.png)
+    ![스크린샷 2021-11-08 오전 10 55 01](https://user-images.githubusercontent.com/87476435/140712863-da6bbac9-61be-4dc7-82bd-3af1e9a0d850.png)
+
     
     - Absolute form에서 사용되는 각 숫자
         
-        ![스크린샷 2021-11-08 오전 10.55.31.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2dad62d-0d36-47dc-ac4a-654860e36b97/스크린샷_2021-11-08_오전_10.55.31.png)
+        ![스크린샷 2021-11-08 오전 10 55 31](https://user-images.githubusercontent.com/87476435/140712919-14f06460-396c-4603-87a8-afcd04a87f16.png)
+
