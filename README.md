@@ -17,8 +17,8 @@
 
 ## 자료구조/Algorithm
 
--[Time Complexity]()
--[Greedy Algorithm]()
--[Algorithm with Math]()
+- [Time Complexity]()
+- [Greedy Algorithm]()
+- [Algorithm with Math]()
 
 ---
