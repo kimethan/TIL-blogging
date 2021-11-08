@@ -12,13 +12,16 @@
 
 터미널 상에 다음과 같이 파일과 폴더를 만들어 보자
 ```bash
-$ mkdir linux
-$ nano helloworld.js
+mkdir linux
+nano helloworld.js
 ```
 
 이후 터미널에 `ls -l` 명령어를 입력하면 다음과 같은 화면이 나온다
 
-![스크린샷 2021-11-08 오전 10.13.19.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f761af7-61dd-443d-9102-dcc0b7911fd3/스크린샷_2021-11-08_오전_10.13.19.png)
+```bash
+-rw-r--r-- 1 [username] staff 28 11 8 10:10 helloworld.js
+drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
+```
 
 여기서 사용자명 앞의 문자열을 주목하면, 각 문자열은 다음과 같은 의미를 가지고 있다.
 
