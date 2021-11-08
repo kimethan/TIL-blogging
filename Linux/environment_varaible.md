@@ -57,7 +57,7 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     
     디테일하게는 엑세스 클래스, 연산자, 액세스 타입으로 구분된다.
     
-   ![스크린샷 2021-11-08 오전 10 29 04](https://user-images.githubusercontent.com/87476435/140712511-225e4d9e-988c-41cf-a362-fb547afe288f.png)
+   <img src="https://user-images.githubusercontent.com/87476435/140712511-225e4d9e-988c-41cf-a362-fb547afe288f.png" width="600" heigth="400">
 
     
     위의 helloworld.js의 권한을 symbolic method로 변경한다면 다음과 같다
@@ -72,7 +72,7 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     chmod u+rwx helloworld.js # u(사용자의 권한에) rwx를 추가함, -rwx------
     ```
     
-    ![스크린샷 2021-11-08 오전 10 48 35](https://user-images.githubusercontent.com/87476435/140712582-40bf85b2-1737-480b-80c0-0f1a482dad8d.png)
+    <img src="https://user-images.githubusercontent.com/87476435/140712582-40bf85b2-1737-480b-80c0-0f1a482dad8d.png" width="500" height="180">
 
     
     symbolic method를 사용하기 위해선 액세스 클래스 연산자와 엑세스 타입을 모두 기억해야 한다
@@ -83,7 +83,7 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     
     사용자, 그룹 또는 다른 사용자나 그룹마다 `rwx`가 나타나고 각 영역의 boolean 값으로 표기한다.
     
-    ![스크린샷 2021-11-08 오전 10 51 50](https://user-images.githubusercontent.com/87476435/140712800-543254dd-db31-4e3d-94ab-b13cacecc68a.png)
+    <img src="https://user-images.githubusercontent.com/87476435/140712800-543254dd-db31-4e3d-94ab-b13cacecc68a.png" width="300" height="180">
 
     
     ```bash
@@ -92,10 +92,10 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
     chmod 744 helloworld.js # -rwxr--r--
     ```
     
-    ![스크린샷 2021-11-08 오전 10 55 01](https://user-images.githubusercontent.com/87476435/140712863-da6bbac9-61be-4dc7-82bd-3af1e9a0d850.png)
+    <img src="https://user-images.githubusercontent.com/87476435/140712863-da6bbac9-61be-4dc7-82bd-3af1e9a0d850.png" width="400" height="100">
 
     
     - Absolute form에서 사용되는 각 숫자
         
-        ![스크린샷 2021-11-08 오전 10 55 31](https://user-images.githubusercontent.com/87476435/140712919-14f06460-396c-4603-87a8-afcd04a87f16.png)
+        <img src="https://user-images.githubusercontent.com/87476435/140712919-14f06460-396c-4603-87a8-afcd04a87f16.png" width="450" height="400">
 
