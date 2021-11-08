@@ -21,7 +21,7 @@ nano helloworld.js
 ```bash
 -rw-r--r-- 1 [username] staff 28 11 8 10:10 helloworld.js
 drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
-```
+``₩
 
 여기서 사용자명 앞의 문자열을 주목하면, 각 문자열은 다음과 같은 의미를 가지고 있다.
 
