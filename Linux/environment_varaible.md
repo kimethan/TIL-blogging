@@ -25,10 +25,8 @@ drwxr-xr-x 2 [username] staff 64 11 8 10:09 linux
 
 여기서 사용자명 앞의 문자열을 주목하면, 각 문자열은 다음과 같은 의미를 가지고 있다.
 
-![Untitled](https://user-images.githubusercontent.com/87476435/140712212-72aaa30f-d382-4b74-8c46-70b23f925adf.png)
+![폴더나 파일의 권한 정보](https://user-images.githubusercontent.com/87476435/140712212-72aaa30f-d382-4b74-8c46-70b23f925adf.png)
 
-
-[그림] 폴더나 파일의 권한 정보
 
 - 맨 앞의 `d`는 directory와 non-directory를 구분한다. 폴더의 경우 `d`, 파일의 경우 `-`로 표기된다
 - 각 그룹의 `rwx`는 각각 Read, Write, Execute permission을 의미한다. 예로  helloworld.js의 경우  소유자(owner)는 읽기와 쓰기가 가능하고(`rw-`) 다른 그룹(group)과 나머지(other)는 읽기만 가능하다(`r-—`).
