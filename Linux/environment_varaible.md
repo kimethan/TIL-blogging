@@ -11,7 +11,7 @@
 ## 1. d,- / rwf / user, group, other
 
 터미널 상에 다음과 같이 파일과 폴더를 만들어 보자
-```jsx
+```bash
 mkdir linux
 nano helloworld.js
 ```
