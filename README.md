@@ -11,6 +11,6 @@
 ## Linux
 
 - [사용권한](Linux/environment_varaible.md)
-- [환경변수]()
+- [환경변수](Linux/environment_varaible.md)
 
 ***
