@@ -56,7 +56,7 @@
 ## O(log n)의 시간복잡도
 
 > Logarithmic Complexity
-  Big-O 표기법중  O(1) 다음으로 빠른 표기법.
+  Big-O 표기법중  O(1) 다음으로 빠른 표기법.<br>
   연산을 진행할때마다 다음 연산의 범위를 절반으로 줄여나가기 때문에 연산속도가 빠르다
 
   <img src="https://user-images.githubusercontent.com/87476435/140922730-d54102a9-9b02-4796-8843-862d6238a7dc.png">
