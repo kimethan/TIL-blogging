@@ -15,8 +15,8 @@
   
 ## O(1)
  > Constant Complexity <br>
-  입력값에 상관없이 즉시 출력이 가능하다
-
+입력값에 상관없이 즉시 출력이 가능하다
+>
 
 
   <img src="https://user-images.githubusercontent.com/87476435/140919049-15673f04-9d62-46bd-a4d4-2fc957da1024.png">
@@ -30,3 +30,9 @@
   let result = O_1_algorithm([1, 2, 3], 1)
   console.log(result)//2
   ```
+
+## O(n)의 시간복잡도
+
+> Linear Complexity
+입력값과 시간이 비례한 경우, 입력값이 커질수록 연산이 길어진다
+>
