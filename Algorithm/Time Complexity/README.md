@@ -19,8 +19,7 @@
 >
 
 
-  <img src="https://user-images.githubusercontent.com/87476435/140919049-15673f04-9d62-46bd-a4d4-2fc957da1024.png">
-    
+  <img src="https://user-images.githubusercontent.com/87476435/140919049-15673f04-9d62-46bd-a4d4-2fc957da1024.png">   
 
   ```jsx
   function O_1_algorithm(arr, index) {
@@ -36,3 +35,25 @@
 > Linear Complexity
 입력값과 시간이 비례한 경우, 입력값이 커질수록 연산이 길어진다
 >
+  <img src="https://user-images.githubusercontent.com/87476435/140920210-1c972af8-2201-451d-9d66-6ec9ebe0b921.png">
+  
+  ```jsx
+  function O_n(n) {
+    for(let i=0; i < n; i++) {
+     //something for 1second
+     }
+  }
+  
+  function another_O_n(n) {
+    for(let i=0; i < 2n; i++) {
+      //something for 1second
+    }
+  }
+  ```
+
+
+<img src="">
+
+<img src="">
+
+<img src="">
