@@ -15,7 +15,7 @@
   
   ## O(1)
     > *Constant Complexity
-    입력값과 상관없이 연산시간은 일정하다.
+    입력값과 상관없이 연산시간은 일정하다.*
     >
     ![O1복잡도](https://user-images.githubusercontent.com/87476435/140919049-15673f04-9d62-46bd-a4d4-2fc957da1024.png)
     
