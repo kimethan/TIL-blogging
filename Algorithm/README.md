@@ -53,15 +53,15 @@
 
 ## Algorithm test 주요 항목
 
-- Backtracking
-- Divide and Conquer
-- Graph Algorithm
-- Greedy
-- DP
-- Searching
-- Sorting(merge, quick, heap)
-- Randomized Algorithms
-- GCD
-- 순열/조합
-- DFS,BFS
-- 분할정복(case study 추천)
+- [Backtracking]()
+- [Divide and Conquer]()
+- [Graph Algorithm]()
+- [Greedy]()
+- [DP]()
+- [Searching]()
+- [Sorting(merge, quick, heap)]()
+- [Randomized Algorithms]()
+- [GCD]()
+- [순열/조합]()
+- [DFS,BFS]()
+- [분할정복(case study 추천)]()
