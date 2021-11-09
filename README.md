@@ -17,7 +17,7 @@
 
 ## Algorithm
 
-- [Time Complexity](Algorithm/Time Complexity/timecomplexity.md)
+- [Time Complexity](Algorithm/Time_Complexity/timecomplexity.md)
 - [Greedy Algorithm]()
 - [Algorithm with Math]()
 
