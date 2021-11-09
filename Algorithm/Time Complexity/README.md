@@ -20,6 +20,7 @@
 
     ![O1복잡도](https://user-images.githubusercontent.com/87476435/140919049-15673f04-9d62-46bd-a4d4-2fc957da1024.png)
     
+    
     ```jsx
     function O_1_algorithm(arr, index) {
       return arr[index];
