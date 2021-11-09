@@ -64,11 +64,31 @@
   이 시간복잡도는 BST에서 절반으로 범위를 줄여나가면서 탐색하는 것과 동일한 로직이다.
   아무리 최악의 경우라도 7번이면 원하는 숫자를 찾을 수 있기 때문에 O(1)다음으로 빠른 시간복잡도이다
 
-## O(n^2)의 시간복잡도
+## O($n^2$)의 시간복잡도
 
 > Quadratic Complexity
 입력값에 따라 시간이 n의 제곱수 비율로 증가하는 로직
->
+
+  ```jsx
+  function quadra(n) {
+    for(let i=0; i < n; i++) {
+      for(let j=0; j < n; j++) {
+        //do something for 1second
+      }
+    }
+  }
+  
+  function another_quadra(n) {
+    for(let i=0; i < n; i++) {
+      for(let j=0; j < n; j++) {
+        for(let k=0; k < n; k++) {
+          //do something for 1second
+        }
+      }
+    }
+  }
+  ```
+  위의 코드를 보면 n * n에 비례하는 연산을 수행한다. 이렇듯 n의 제곱수에 비례하는 로직은  O($n^2$)으로 표기할 수 있다
 <img src="">
 
 <img src="">
