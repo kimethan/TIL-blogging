@@ -13,12 +13,19 @@
 - [사용권한](Linux/environment_varaible.md)
 - [환경변수](Linux/environment_varaible.md)
 
-***
+---
 
-## 자료구조/Algorithm
+## Algorithm
 
-- [Time Complexity]()
+- [Time Complexity](Algorithm/Time Complexity/README.md)
 - [Greedy Algorithm]()
 - [Algorithm with Math]()
+
+---
+
+## 자료구조
+
+
+
 
 ---
