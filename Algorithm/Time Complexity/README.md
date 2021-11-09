@@ -21,7 +21,7 @@
     
     ```jsx
     function O_1_algorithm(arr, index) {
-      return arr[index]
+      return arr[index];
     }
     
     let result = O_1_algorithm([1, 2, 3], 1)
