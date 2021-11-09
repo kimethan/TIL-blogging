@@ -18,7 +18,7 @@
     입력값에 상관없이 즉시 출력이 가능하다**
 
 
-    ![O1복잡도](https://user-images.githubusercontent.com/87476435/140919049-15673f04-9d62-46bd-a4d4-2fc957da1024.png)
+    <img src="https://user-images.githubusercontent.com/87476435/140919049-15673f04-9d62-46bd-a4d4-2fc957da1024.png">
     
     
     ```jsx
