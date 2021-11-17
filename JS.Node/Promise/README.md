@@ -21,7 +21,7 @@ $.get('url 주소/products/1', function (res) {
 ```
 
 위 요청을 받으면 서버에 데이터를 보내달라는 요청을 하게 된다.<br>
-그런데 여기서 [데이터를 받아오기도 전에 데이터를 출력하려고 하면 오류가 발생하거나 빈 화면이 뜬다](../asynchronous/README.md#비동기는-어떻게-사용하는가).
+그런데 여기서 [데이터를 받아오기도 전에 데이터를 출력하려고 하면 오류가 발생하거나 빈 화면이 뜬다](../asynchronous/README.md#비동기는-어떻게-사용하는가).<br>
 이런 문제를 해결하기 위한 방법으로 Promise를 사용할 수 있다.
 
 ## <span style="color: skyblue">Promise의 동작법 </span>
@@ -66,7 +66,7 @@ getData().then(function (tableData) {
 
 ## <span style="color: skyblue">Promise의 3가지 상태</span>
 
-**promise의 상태는 가장 기본적인 개념이다. 각 상태는 promise의 처리과정을 의미한다.**
+**promise의 상태는 가장 기본적인 개념이다. 각 상태는 promise의 처리과정을 의미한다.**<br>
 `new Promise()`로 프로미스가 생성되고 종료될때까지 3가지 상태가 존재한다.
 
 - **pending(대기): 비동기 처리 로직이 완료되지 않은 상태**<br>
@@ -300,8 +300,11 @@ getData()
 ```
 
 각각의 실행 결과는 다음과 같다
+* 오류를 못잡은 경우<br>
+<img src="https://user-images.githubusercontent.com/87476435/142236730-9d5ba9ac-02ed-41f2-b53c-a21b748c0332.png" width=420 height=80>
 
-<img src="">
-<img src="">
+* 오류를 잡은 경우<br>
+<img src="https://user-images.githubusercontent.com/87476435/142236527-5fd24d2f-7c37-4fcb-a326-3d7b4310b70b.png" width=420 heigth=100>
+
 
 [참고: 캡틴판교 블로그](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
