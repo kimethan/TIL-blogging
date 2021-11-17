@@ -3,4 +3,5 @@
 ## 비동기가 뭐야?
 - blocking vs non-blocking
 
-  <img src="https://heathercournoyer.ca/wp-content/uploads/2021/02/Blocking-940x675.png">
+  <img width="510" alt="blocking" src="https://user-images.githubusercontent.com/87476435/142168634-2741a9a7-3031-44a7-911a-5f042a7b7775.png">
+
