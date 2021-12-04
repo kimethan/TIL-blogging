@@ -132,7 +132,7 @@ async function logUserData() {
 ```
 
 위처럼 우리가 사용하는 함수의 동작 방식과 동일하게 비동기 처리를 할 수 있다.
-위에서 사용된 [fetch는 HTTP통신에 관련된 API메소드]()이다.
+위에서 사용된 [fetch는 HTTP통신에 관련된 API메소드](브라우저/AJAX/README.nd)이다.
 
 ## async & await 에러 처리
 
