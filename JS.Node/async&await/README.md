@@ -22,31 +22,32 @@
 
 - **콜백을 사용한 비동기 함수**
 
-```jsx
-function logName() {
-  //fetchUser는 url이라는 서버에서 데이터를 받아오는 통신코드라고 가정
-  let user = fetchUser('url', function (user) {
-    if (user.id === 1) {
-      console.log(user.name);
-    }
-  });
-}
-```
+  ```jsx
+  function logName() {
+    //fetchUser는 url이라는 서버에서 데이터를 받아오는 통신코드라고 가정
+    let user = fetchUser('url', function (user) {
+      if (user.id === 1) {
+        console.log(user.name);
+      }
+    });
+  }
+  ```
 
-위처럼 콜백을 사용한 함수는 내용을 이해하기도 어려울 뿐더러, <br>내용이 길고 복잡할 수록 코드가 작동하는 방식을 예측하기 어렵다.
+  위처럼 콜백을 사용한 함수는 내용을 이해하기도 어려울 뿐더러, <br>내용이 길고 복잡할 수록 코드가 작동하는 방식을 예측하기 어렵다.
+  <br>
 
 - **async & await를 사용한 비동기 함수**
 
-```jsx
-async function logName() {
-  let user = await fetchUser('url');
-  if (user.id === 1) {
-    console.log(user.name);
+  ```jsx
+  async function logName() {
+    let user = await fetchUser('url');
+    if (user.id === 1) {
+      console.log(user.name);
+    }
   }
-}
-```
+  ```
 
-async를 사용하면 콜백 없이 순차적으로 함수를 작성하기 때문에 코드를 작성하기도, 이해하기도 쉽다.
+  async를 사용하면 콜백 없이 순차적으로 함수를 작성하기 때문에 코드를 작성하기도, 이해하기도 쉽다.
 
 ## async & await 함수 사용법과 예제
 
@@ -65,74 +66,74 @@ async function 함수() {
 
 - **_예제1_**
 
-```jsx
-function delay(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+  ```jsx
+  function delay(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
 
-async function getApple() {
-  await delay(1000);
-  return '🍎';
-}
+  async function getApple() {
+    await delay(1000);
+    return '🍎';
+  }
 
-async function getBanana() {
-  await delay(1000);
-  return '🍌';
-}
+  async function getBanana() {
+    await delay(1000);
+    return '🍌';
+  }
 
-//async 를 사용해서 Promise객체를 받아온다
-//만약 async를 사용하지 않는다면?
-function callback_pickFruits() {
-  return getApple().then((apple) => {
-    return getBanana().then(
-      (banana) => `${apple}+${banana} from callback hell😈`
-    );
-  });
-}
+  //async 를 사용해서 Promise객체를 받아온다
+  //만약 async를 사용하지 않는다면?
+  function callback_pickFruits() {
+    return getApple().then((apple) => {
+      return getBanana().then(
+        (banana) => `${apple}+${banana} from callback hell😈`
+      );
+    });
+  }
 
-callback_pickFruits().then(console.log);
+  callback_pickFruits().then(console.log);
 
-//위와 같은 콜백지옥을 맛볼 수 있다
-//async를 쓴다면
+  //위와 같은 콜백지옥을 맛볼 수 있다
+  //async를 쓴다면
 
-async function async_await_pickFruits() {
-  const apple = await getApple();
-  const banana = await getBanana();
-  return `${apple}+${banana} from async&await!!`;
-}
+  async function async_await_pickFruits() {
+    const apple = await getApple();
+    const banana = await getBanana();
+    return `${apple}+${banana} from async&await!!`;
+  }
 
-async_await_pickFruits().then(console.log);
-//위와 같이 우리가 훨씬 이해하기 쉬운방식으로 볼 수 있다.
-```
+  async_await_pickFruits().then(console.log);
+  //위와 같이 우리가 훨씬 이해하기 쉬운방식으로 볼 수 있다.
+  ```
 
 - **_예제2_**
 
-```jsx
-function fetchUser() {
-  let url = 'https://domain.com/user/1';
-  return fetch(url).then(function (res) {
-    return res.json();
-  });
-}
-```
-
-위와 같이 서버로부터 유저 정보를 프로미스 객체로 가져오는 통신 함수가 있다고 하자.
-우리가 async와 await로 구현해야할 로직은
-
-1. fetchUser()를 하여 사용자 정보를 호출한다.
-2. 받아온 사용자의 아이디가 1이면 콘솔에 사용자 정보를 출력한다
-
-```jsx
-async function logUserData() {
-  let user = await fetchUser();
-  if (user.id === 1) {
-    console.log(user.info);
+  ```jsx
+  function fetchUser() {
+    let url = 'https://domain.com/user/1';
+    return fetch(url).then(function (res) {
+      return res.json();
+    });
   }
-}
-```
+  ```
 
-위처럼 우리가 사용하는 함수의 동작 방식과 동일하게 비동기 처리를 할 수 있다.
-위에서 사용된 [fetch는 HTTP통신에 관련된 API메소드](브라우저/AJAX/README.nd)이다.
+  위와 같이 서버로부터 유저 정보를 프로미스 객체로 가져오는 통신 함수가 있다고 하자.
+  우리가 async와 await로 구현해야할 로직은
+
+  1. fetchUser()를 하여 사용자 정보를 호출한다.
+  2. 받아온 사용자의 아이디가 1이면 콘솔에 사용자 정보를 출력한다
+
+  ```jsx
+  async function logUserData() {
+    let user = await fetchUser();
+    if (user.id === 1) {
+      console.log(user.info);
+    }
+  }
+  ```
+
+  위처럼 우리가 사용하는 함수의 동작 방식과 동일하게 비동기 처리를 할 수 있다.
+  위에서 사용된 [fetch는 HTTP통신에 관련된 API메소드](브라우저/AJAX/README.nd)이다.
 
 ## async & await 에러 처리
 
@@ -197,45 +198,52 @@ apple과 banana를 가져오는데 각각 1초씩 소요가 된다.
 
 1. ~~**_Promise를 먼저 받아오기_**~~
 
-```jsx
-/*
-...(생략)...
-*/
-async function pickFruits() {
-  const promiseApple = getApple();
-  const promiseBanana = getBanana();
-  //await를 사용하지 않고 비동기 함수를 호출하면 Promsie를 먼저 반환한다.
-  //즉 둘은 독립적으로 값을 가져오고
-  const apple = await promiseApple;
-  const banana = await promiseBanana;
-  //그럼 1초씩 기다리지 않아도 둘은 한번에 await 시킬 수 있다
-  return `${apple}+${banana}`;
-}
-```
+   ```jsx
+   /*
+   ...(생략)...
+   */
+   async function pickFruits() {
+     const promiseApple = getApple();
+     const promiseBanana = getBanana();
+     //await를 사용하지 않고 비동기 함수를 호출하면 Promsie를 먼저 반환한다.
+     //즉 둘은 독립적으로 값을 가져오고
+     const apple = await promiseApple;
+     const banana = await promiseBanana;
+     //그럼 1초씩 기다리지 않아도 둘은 한번에 await 시킬 수 있다
+     return `${apple}+${banana}`;
+   }
+   ```
 
-그러나 보시다시피 이 코드는 보기도 길어질 뿐더러 상당히 작성하기 귀찮다.  
-그래서 이때 사용하는 유용한 API가 있다.
+   그러나 보시다시피 이 코드는 보기도 길어질 뿐더러 상당히 작성하기 귀찮다.  
+   그래서 이때 사용하는 유용한 API가 있다.
 
 2. **_`Promise.all()` 사용하기_**
 
-```jsx
-function pickAllFruits() {
-  return Promise.all([getApple(), getBanana()]).then((fruits) =>
-    fruits.join(' + ')
-  );
-}
-pickAllFruits().then(console.log);
-```
+   ```jsx
+   function pickAllFruits() {
+     return Promise.all([getApple(), getBanana()]).then((fruits) =>
+       fruits.join(' + ')
+     );
+   }
+   pickAllFruits().then(console.log);
+   ```
 
-위처럼 작성하면 한번에 여러 Promise객체를 받아올 수 있다
+   위처럼 작성하면 한번에 여러 Promise객체를 받아올 수 있다
 
-- **_혹은 먼저 출력되는 값을 보고싶을 땐 `Promise.race()`_**
+   - **_혹은 먼저 출력되는 값을 보고싶을 땐 `Promise.race()`_**
 
-```jsx
-function pickOnlyOne() {
-  return Promise.race([getApple(), getBanana()]);
-}
-pickOnlyOne().then(console.log);
-```
+   ```jsx
+   function pickOnlyOne() {
+     return Promise.race([getApple(), getBanana()]);
+   }
+   pickOnlyOne().then(console.log);
+   ```
 
-[Promise.all()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)과 [Promise.race()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/race)에 대한 설명은 공식문서를 참고하자
+   [Promise.all()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)과 [Promise.race()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/race)에 대한 설명은 공식문서를 참고하자
+
+<br>
+
+#### reference
+
+- [캡틴판교블로그](https://joshua1988.github.io/web-development/javascript/js-async-await/)
+- [드림코딩by엘리 youtube](https://youtu.be/aoQSOZfz3vQ)
