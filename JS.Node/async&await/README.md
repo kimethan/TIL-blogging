@@ -60,9 +60,8 @@ async function 함수() {
 ```
 
 1. **<span style='color: darkviolet'>async는 예약어이다.</span> `'나 이 함수 비동기 처리할 거야!'`**
-2. **await는 비동기 처리되는 코드 앞에 붙는다.**  
-   **<span style='color: darkviolet'>비동기 처리 메소드가 반드시 프로미스 객체를 반환할 때만 await가 작동된다.</span>`'기다려!'`**
-   일반적으로 await의 대상이 되는 비동기 처리코드는 [Axios](https://github.com/axios/axios)등 프로미스를 반환하는 API호출 함수이다.
+2. **await는 비동기 처리되는 코드 앞에 붙으며, 비동기 처리 메소드가 반드시 프로미스 객체를 반환할 때만 await가 작동된다.`'기다려!'`**
+   <br>일반적으로 await의 대상이 되는 비동기 처리코드는 [Axios](https://github.com/axios/axios)등 프로미스를 반환하는 API호출 함수이다.
 
 - **_예제1_**
 
