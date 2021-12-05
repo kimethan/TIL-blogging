@@ -164,6 +164,6 @@
   이런 형태를 **콜백지옥(callback hell)** 이라고 한다.<br>
   이런 콜백지옥을 벗어나는데는 간단하게 각 콜백함수를 따로 적어두는 방법도 있긴하지만(위의 커피 주문 방식이 해당된다),<br>
   **Promise와 Async를 사용하는것이 가장 유용하다.**
-  [이에 대한 내용은 여기서 살펴보자.]()
+  [이에 대한 내용은 여기서 살펴보자.](../Promise/README.md)
 
 [참고: 캡틴판교 블로그](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)

@@ -16,7 +16,7 @@
   }
   ```
   우리는 이렇게 **순차적으로 위에서 아래로 읽으면서 사고하는 것이 편하다.**
-  그리고 **<span style="color: orange">이런 방식으로 비동기 함수를 작성한 것이 async & await 이다.</span>**
+  그리고 **이런 방식으로 비동기 함수를 작성한 것이 async & await 이다.**
 
 ## 쉽게 이해하는 async & await 사용 이유
 
@@ -59,7 +59,7 @@ async function 함수() {
 }
 ```
 
-1. **<span style='color: darkviolet'>async는 예약어이다.</span> `'나 이 함수 비동기 처리할 거야!'`**
+1. **async는 예약어이다. `'나 이 함수 비동기 처리할 거야!'`**
 2. **await는 비동기 처리되는 코드 앞에 붙으며, 비동기 처리 메소드가 반드시 프로미스 객체를 반환할 때만 await가 작동된다.`'기다려!'`**
    <br>일반적으로 await의 대상이 되는 비동기 처리코드는 [Axios](https://github.com/axios/axios)등 프로미스를 반환하는 API호출 함수이다.
 
@@ -132,7 +132,7 @@ async function 함수() {
   ```
 
   위처럼 우리가 사용하는 함수의 동작 방식과 동일하게 비동기 처리를 할 수 있다.
-  위에서 사용된 [fetch는 HTTP통신에 관련된 API메소드](브라우저/AJAX/README.nd)이다.
+  위에서 사용된 [fetch는 HTTP통신에 관련된 API메소드](브라우저/AJAX/README.md)이다.
 
 ## async & await 에러 처리
 
